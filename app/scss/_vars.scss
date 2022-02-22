@@ -1,0 +1,39 @@
+$global-color-text: #252525;
+$global-color-primary: #0051b8;
+$global-color-accent: #d72525;
+$global-color-secondary: #ffffff;
+
+$animation-speed: 0.3s;
+$animation-func: ease;
+$animation: $animation-speed $animation-func;
+
+%line {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 3px;
+  background-color: $global-color-accent;
+}
+
+%title {
+  font-family: "PT Serif", Sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+%link-btn {
+  color: $global-color-primary;
+  border-radius: 50px;
+  border: 2px solid $global-color-primary;
+  font-size: 20px;
+  font-weight: 700;
+  transition: $animation;
+  display: inline-block;
+  &:hover {
+    transition: $animation;
+    background-color: $global-color-primary;
+    color: $global-color-secondary;
+  }
+}
