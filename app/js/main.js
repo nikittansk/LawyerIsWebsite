@@ -41,9 +41,9 @@ menu.addEventListener('click', (e) => {
         // scrollTop();
     }
 
-    if(e.target.classList.contains('menu__list-link') && !e.target.classList.contains('menu__list-link--drop')) {
-        e.preventDefault();
-        menu.classList.remove('open');
-        overlay.classList.remove('open');
-    }
+    // if(e.target.classList.contains('menu__list-link') && !e.target.classList.contains('menu__list-link--drop')) {
+    //     e.preventDefault();
+    //     menu.classList.remove('open');
+    //     overlay.classList.remove('open');
+    // }
 });

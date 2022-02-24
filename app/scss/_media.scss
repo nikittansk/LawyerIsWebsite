@@ -41,6 +41,11 @@
       font-size: 48px;
     }
   }
+  .service {
+    &__title {
+      font-size: 42px;
+    }
+  }
 }
 
 @media (max-width: 900px) {
@@ -182,7 +187,7 @@
       color: $global-color-text;
     }
     &__list-link.active {
-      padding-bottom: 0;
+      padding: 20px 30px;
       &::after {
         display: none;
       }
@@ -200,6 +205,11 @@
       &::after {
         background-image: url(../images/icons/drop-down-arrow-dark.svg);
         transform: rotate(-90deg);
+      }
+      &.menu__list-link--drop.menu__list-link--home {
+        &::after {
+          background-image: url(../images/icons/drop-down-arrow-dark.svg);
+        }
       }
     }
     &__list--dropdown {
@@ -219,6 +229,7 @@
       }
     }
   }
+
   .dropdown-list__link {
     font-size: 20px;
     padding: 20px 30px;
@@ -325,6 +336,71 @@
       }
     }
   }
+  .info {
+    margin-bottom: 100px;
+    &__inner {
+      display: block;
+    }
+    &__box {
+      width: 100%;
+      &:first-child {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+    &__box-title {
+      &::after {
+        width: 40%;
+      }
+    }
+    &__box-text {
+      width: 100%;
+    }
+  }
+  .contacts {
+    &__inner {
+      display: block;
+      & iframe {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+    &__content {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .service {
+    &__subtitle {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    &__content {
+      padding: 50px 0;
+      margin-bottom: 100px;
+    }
+    &__content-title {
+      font-size: 32px;
+    }
+    &__content-subtitle,
+    &__content-item {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    &__content-box--inner {
+      display: block;
+    }
+    &__content-list {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+    }
+    &.bankruptcy {
+      margin-bottom: 100px;
+    }
+  }
   .footer {
     &__inner {
       display: block;
@@ -411,6 +487,18 @@
       line-height: 40px;
     }
   }
+  .contacts {
+    &__title {
+      font-size: 32px;
+    }
+    &__phone {
+      font-size: 26px;
+    }
+    &__address,
+    &__email {
+      font-size: 20px;
+    }
+  }
 }
 
 @media (max-width: 550px) {
@@ -455,6 +543,16 @@
     }
     &__btn {
       width: 100%;
+    }
+  }
+  .service {
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      line-height: 30px;
     }
   }
   .footer {
