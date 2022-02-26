@@ -8,7 +8,7 @@ $title = 'Тема письма';
 
 $c = true;
 // Формирование самого письма
-$title = 'Заголовок письма';
+$title = 'Заявка с сайта';
 foreach ( $_POST as $key => $value ) {
   if ( $value != '' && $key != 'project_name' && $key != 'admin_email' && $key != 'form_subject' ) {
     $body .= '
@@ -40,7 +40,7 @@ try {
     $mail->setFrom('lawyerzakharova7@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
      // Получатель письма
-    $mail->addAddress('ferilix832@ishop2k.com');
+    $mail->addAddress('zaharova0205@mail.ru');
 
       // Отправка сообщения
     $mail->isHTML(true);
