@@ -37,6 +37,8 @@ function browsersync() {
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
+        'app/js/inputmask.js',
+        'app/js/just-validate.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))

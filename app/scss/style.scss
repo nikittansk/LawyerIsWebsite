@@ -412,6 +412,11 @@
     & .form__item {
       width: 100%;
       margin: 0px 5px;
+      display: flex;
+      flex-direction: column-reverse;
+      & .js-validate-error-label {
+        font-size: 14px;
+      }
     }
     & .form__item:first-child {
       margin-left: 0px;
