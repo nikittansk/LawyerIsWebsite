@@ -568,7 +568,6 @@
     background-image: url(../images/background/7.jpg);
   }
   &.bankruptcy {
-    margin-bottom: 150px;
     background-image: url(../images/background/8.jpg);
   }
   &.realty {
@@ -666,6 +665,37 @@
       top: 50%;
       transform: translateY(-50%);
     }
+  }
+}
+
+.price {
+  &::after {
+    width: 20%;
+  }
+  &__inner {
+    margin-top: 35px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 28px;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__item-text {
+    margin-right: 20px;
+    max-width: 600px;
+    font-style: italic;
+    &.housing {
+      max-width: 700px;
+    }
+  }
+  &__item-number {
+    color: $global-color-accent;
+    font-weight: 700;
   }
 }
 

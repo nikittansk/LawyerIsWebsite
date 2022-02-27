@@ -102,6 +102,13 @@
       width: 650px;
     }
   }
+  .price {
+    &__item-text {
+      &.housing {
+        max-width: 500px;
+      }
+    }
+  }
 }
 
 @media (max-width: 800px) {
@@ -428,6 +435,16 @@
       }
     }
   }
+  .price {
+    &__item {
+      font-size: 22px;
+    }
+    &__item-text {
+      &.compensation {
+        max-width: 470px;
+      }
+    }
+  }
 }
 
 @media (max-width: 650px) {
@@ -499,6 +516,19 @@
       font-size: 20px;
     }
   }
+  .price {
+    &__item {
+      font-size: 20px;
+    }
+    &__item-text {
+      max-width: 300px;
+      margin-right: 15px;
+      &.compensation,
+      &.housing {
+        max-width: 300px;
+      }
+    }
+  }
 }
 
 @media (max-width: 550px) {
@@ -555,6 +585,21 @@
       line-height: 30px;
     }
   }
+  .price {
+    &::after {
+      width: 40%;
+    }
+    &__item {
+      display: block;
+      font-size: 24px;
+    }
+    &__item-text {
+      width: 100%;
+      margin-bottom: 5px;
+      margin-right: 0;
+      max-width: 100%;
+    }
+  }
   .footer {
     &__content-box--address {
       text-align: center;
@@ -582,6 +627,11 @@
     }
     &__content-btn {
       font-size: 18px;
+    }
+  }
+  .price {
+    &__item {
+      font-size: 20px;
     }
   }
 }
